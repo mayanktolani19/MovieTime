@@ -16,11 +16,12 @@ def welcome():
     return render_template('welcome.html')
 
 #Rating Page
-@app.route("/rating", methods=["GET", "POST"])
+@app.route("/rating2", methods=["GET", "POST"])
 def rating():
     if request.method=="POST":
         return render_template('recommendation.html')
-    return render_template('rating.html')
+    return render_template('rating2.html')
+
 
 #Results Page
 @app.route("/recommendation", methods=["GET", "POST"])
